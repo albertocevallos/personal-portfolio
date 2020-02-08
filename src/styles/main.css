@@ -1,0 +1,792 @@
+/** partials for all common sass */
+@font-face {
+  font-family: "Avenir";
+  src: url("../assets/fonts/avenir/avenir-next-Regular.otf") format("opentype");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("../assets/fonts/avenir/avenir-next-Demi.otf") format("opentype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("../assets/fonts/avenir/avenir-next-Medium.otf") format("opentype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("../assets/fonts/avenir/avenir-next-Bold.otf") format("opentype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("../assets/fonts/avenir/avenir-next-Heavy.otf") format("opentype");
+  font-weight: 1000;
+}
+
+@font-face {
+  font-family: "IBM";
+  src: url("../assets/fonts/IBM_Plex_Mono/IBMPlexMono-Medium.ttf") format("opentype");
+  font-weight: 100;
+}
+
+/** partials for components*/
+/** partials for all common sass */
+@font-face {
+  font-family: "Avenir";
+  src: url("../assets/fonts/avenir/avenir-next-Regular.otf") format("opentype");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("../assets/fonts/avenir/avenir-next-Demi.otf") format("opentype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("../assets/fonts/avenir/avenir-next-Medium.otf") format("opentype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("../assets/fonts/avenir/avenir-next-Bold.otf") format("opentype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("../assets/fonts/avenir/avenir-next-Heavy.otf") format("opentype");
+  font-weight: 1000;
+}
+
+@font-face {
+  font-family: "IBM";
+  src: url("../assets/fonts/IBM_Plex_Mono/IBMPlexMono-Medium.ttf") format("opentype");
+  font-weight: 100;
+}
+
+/** Unique sass */
+@-webkit-keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.header {
+  margin-top: 2.5em;
+  padding: 0 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header__media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.header__media__con {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-transition: all 0.3s cubic-bezier(0.05, 0.03, 0.35, 1);
+  transition: all 0.3s cubic-bezier(0.05, 0.03, 0.35, 1);
+  display: none;
+}
+
+.header__media__con--links {
+  text-decoration: none;
+  color: #323232;
+  -webkit-transition: all 0.3s cubic-bezier(0.05, 0.03, 0.35, 1);
+  transition: all 0.3s cubic-bezier(0.05, 0.03, 0.35, 1);
+}
+
+.header__media__con--links:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.header__media__email {
+  text-decoration: none;
+  color: #323232;
+}
+
+.header__media__email img {
+  width: 1em;
+  -webkit-transition: all 0.3s cubic-bezier(0.05, 0.03, 0.35, 1);
+  transition: all 0.3s cubic-bezier(0.05, 0.03, 0.35, 1);
+}
+
+.header__media__email:hover img {
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+}
+
+.header__line {
+  width: 100%;
+  background-color: #323232;
+  height: 1px;
+  position: relative;
+}
+
+.header__line--highlight {
+  position: absolute;
+  right: 0;
+  height: 4px;
+  width: 10em;
+  background: linear-gradient(90.68deg, #b993d6 0.26%, #8ca6db 102.37%);
+  margin-top: -1px;
+  border-radius: 5px;
+  -webkit-animation: gradientBG 5s ease infinite;
+          animation: gradientBG 5s ease infinite;
+  background-size: 400% 400%;
+}
+
+@media only screen and (min-width: 426px) {
+  .header__media {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .header__media--links {
+    margin-left: 4em;
+  }
+}
+
+@media only screen and (min-width: 677px) {
+  .header {
+    width: 645px;
+  }
+}
+
+/** partials for all common sass */
+@font-face {
+  font-family: "Avenir";
+  src: url("../assets/fonts/avenir/avenir-next-Regular.otf") format("opentype");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("../assets/fonts/avenir/avenir-next-Demi.otf") format("opentype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("../assets/fonts/avenir/avenir-next-Medium.otf") format("opentype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("../assets/fonts/avenir/avenir-next-Bold.otf") format("opentype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("../assets/fonts/avenir/avenir-next-Heavy.otf") format("opentype");
+  font-weight: 1000;
+}
+
+@font-face {
+  font-family: "IBM";
+  src: url("../assets/fonts/IBM_Plex_Mono/IBMPlexMono-Medium.ttf") format("opentype");
+  font-weight: 100;
+}
+
+/** Unique sass */
+.section {
+  margin-top: 5em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1em;
+}
+
+.section--subtitle {
+  font-size: 0.75em;
+  letter-spacing: 0.1em;
+  margin-top: 10em;
+}
+
+.section--subtitle span {
+  font-size: 1em;
+}
+
+.section--hr {
+  border: 0px;
+  outline: 0px;
+  height: 1px;
+  background-color: #323232;
+  margin-top: 1em;
+  margin-bottom: 2.5em;
+}
+
+.section__item {
+  margin-top: 3.75em;
+  height: 3.125em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.section__item__box {
+  width: 26em;
+}
+
+.section__item__box--title {
+  text-decoration: none;
+  color: #323232;
+  font-weight: 700;
+  font-size: 1.55em;
+  line-height: 2.5em;
+  -webkit-transition: all 0.3s cubic-bezier(0.05, 0.03, 0.35, 1);
+  transition: all 0.3s cubic-bezier(0.05, 0.03, 0.35, 1);
+}
+
+.section__item__box--title:hover {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  opacity: 0.5;
+}
+
+.section__item__box--release {
+  font-size: 0.75em;
+}
+
+.section__item__wrap {
+  padding-top: 0.25em;
+  display: none;
+  width: 100%;
+}
+
+.section__item__wrap--info {
+  width: 100%;
+  color: #323232;
+  font-size: 0.75em;
+  line-height: 2.5em;
+}
+
+.section__item__wrap--release {
+  display: none;
+  color: #323232;
+  font-size: 0.75em;
+  line-height: 2.5em;
+  font-weight: 300;
+}
+
+.section__item--gif {
+  display: none;
+  position: absolute;
+  width: 250px;
+  -webkit-transition: all 0.3s cubic-bezier(0.05, 0.03, 0.35, 1);
+  transition: all 0.3s cubic-bezier(0.05, 0.03, 0.35, 1);
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  margin-left: 20px;
+  margin-top: -40px;
+  visibility: hidden;
+  z-index: -999;
+  opacity: 1;
+}
+
+.section__item:hover .section__item--gif {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  visibility: visible;
+}
+
+@media only screen and (min-width: 425px) {
+  .section--subtitle span {
+    font-size: 1.5em;
+  }
+  .section__item {
+    height: 6em;
+  }
+  .section__item__box--title {
+    font-size: 1em;
+  }
+  .section__item__box--release {
+    display: none;
+  }
+  .section__item__wrap {
+    display: block;
+  }
+  .section__item__wrap--release {
+    display: block;
+  }
+  .section__item--gif {
+    display: block;
+  }
+  .section__item:hover .section__item--gif {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    visibility: visible;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .section__item {
+    height: 3.125em;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .section__item__box--title {
+    font-size: 1.4em;
+  }
+  .section__item__wrap {
+    padding-top: 0.75em;
+  }
+}
+
+@media only screen and (min-width: 677px) {
+  .section {
+    width: 645px;
+  }
+  .section__item {
+    height: 5em;
+  }
+  .section__item__wrap {
+    padding-top: 0.7em;
+  }
+  .section__item__wrap--info {
+    font-size: 0.85em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .section__item__wrap--info {
+    font-size: 0.85em;
+  }
+}
+
+/** partials for all common sass */
+@font-face {
+  font-family: "Avenir";
+  src: url("../assets/fonts/avenir/avenir-next-Regular.otf") format("opentype");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("../assets/fonts/avenir/avenir-next-Demi.otf") format("opentype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("../assets/fonts/avenir/avenir-next-Medium.otf") format("opentype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("../assets/fonts/avenir/avenir-next-Bold.otf") format("opentype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("../assets/fonts/avenir/avenir-next-Heavy.otf") format("opentype");
+  font-weight: 1000;
+}
+
+@font-face {
+  font-family: "IBM";
+  src: url("../assets/fonts/IBM_Plex_Mono/IBMPlexMono-Medium.ttf") format("opentype");
+  font-weight: 100;
+}
+
+/** Unique sass */
+.main {
+  padding: 0 1em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main__profile {
+  width: 100%;
+}
+
+.main__profile--image {
+  background: none;
+  border-radius: 50%;
+  width: 45%;
+  padding: 0.2em;
+  display: block;
+  margin: 0 auto;
+}
+
+.main__profile--name {
+  margin-top: 1em;
+  text-align: center;
+  font-size: xx-large;
+  font-weight: 300;
+  color: #323232;
+}
+
+.main__profile__info {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main__profile__info--bio {
+  cursor: not-allowed;
+  margin-top: 1em;
+}
+
+.main__bio {
+  margin-top: 3em;
+  width: 100%;
+}
+
+.main__bio--heading {
+  color: #323232;
+  font-weight: 100;
+  font-size: 1em;
+  line-height: 2.5em;
+}
+
+.main__bio--heading span {
+  font-weight: 500;
+}
+
+.main__bio--heading a {
+  font-weight: 500;
+  color: #323232;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  -webkit-transition: all 0.3s cubic-bezier(0.05, 0.03, 0.35, 1);
+  transition: all 0.3s cubic-bezier(0.05, 0.03, 0.35, 1);
+}
+
+.main__bio--heading a:hover {
+  color: #323232;
+}
+
+.main__bio--heading a:after {
+  display: block;
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background-color: #323232;
+  opacity: 0.3;
+  -webkit-transition: all 0.3s cubic-bezier(0.05, 0.03, 0.35, 1);
+  transition: all 0.3s cubic-bezier(0.05, 0.03, 0.35, 1);
+}
+
+.main__bio--heading a:hover:after {
+  margin-top: 0.4em;
+}
+
+.main__bio--subheading {
+  margin-top: 2em;
+  font-weight: 100;
+  font-size: 0.8em;
+  line-height: 2.75em;
+}
+
+.main__bio--subheading span {
+  font-weight: 500;
+}
+
+.main__bio--subheading a {
+  font-weight: 500;
+  color: #323232;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  -webkit-transition: all 0.3s cubic-bezier(0.05, 0.03, 0.35, 1);
+  transition: all 0.3s cubic-bezier(0.05, 0.03, 0.35, 1);
+}
+
+.main__bio--subheading a:after {
+  display: block;
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background-color: #323232;
+  opacity: 0.3;
+  -webkit-transition: all 0.3s cubic-bezier(0.05, 0.03, 0.35, 1);
+  transition: all 0.3s cubic-bezier(0.05, 0.03, 0.35, 1);
+}
+
+.main__bio--subheading a:hover:after {
+  margin-top: 0.4em;
+}
+
+.main__bio__icons {
+  display: block;
+  margin-top: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__bio__icons--svg {
+  color: black;
+  margin-right: 1.25em;
+  width: 1.1em;
+  opacity: 0.75;
+  -webkit-transition: all 0.3s cubic-bezier(0.05, 0.03, 0.35, 1);
+  transition: all 0.3s cubic-bezier(0.05, 0.03, 0.35, 1);
+}
+
+.main__bio__icons--svg:nth-child(1) {
+  padding-bottom: 0.3em;
+}
+
+.main__bio__icons--svg:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+@media only screen and (min-width: 426px) {
+  .main {
+    margin-top: 6.25em;
+  }
+  .main__profile--image {
+    width: 160px;
+  }
+}
+
+@media only screen and (min-width: 677px) {
+  .main {
+    width: 645px;
+    margin-top: 6.25em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main__profile--image {
+    width: 160px;
+  }
+  .main__bio--heading {
+    font-size: 1.3em;
+    line-height: 1.85em;
+  }
+  .main__bio--subheading {
+    font-size: 0.95em;
+    line-height: 2.3em;
+  }
+}
+
+/** partials for all common sass */
+@font-face {
+  font-family: "Avenir";
+  src: url("../assets/fonts/avenir/avenir-next-Regular.otf") format("opentype");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("../assets/fonts/avenir/avenir-next-Demi.otf") format("opentype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("../assets/fonts/avenir/avenir-next-Medium.otf") format("opentype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("../assets/fonts/avenir/avenir-next-Bold.otf") format("opentype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("../assets/fonts/avenir/avenir-next-Heavy.otf") format("opentype");
+  font-weight: 1000;
+}
+
+@font-face {
+  font-family: "IBM";
+  src: url("../assets/fonts/IBM_Plex_Mono/IBMPlexMono-Medium.ttf") format("opentype");
+  font-weight: 100;
+}
+
+/** Unique sass */
+.footer {
+  margin-top: 5em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1em;
+  margin-bottom: 2em;
+}
+
+.footer__contact--hand {
+  width: 1em;
+  -webkit-transition: all 0.3s cubic-bezier(0.05, 0.03, 0.35, 1);
+  transition: all 0.3s cubic-bezier(0.05, 0.03, 0.35, 1);
+}
+
+.footer__contact--link {
+  line-height: 2em;
+  font-weight: 500;
+  color: #323232;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  -webkit-transition: all 0.3s cubic-bezier(0.05, 0.03, 0.35, 1);
+  transition: all 0.3s cubic-bezier(0.05, 0.03, 0.35, 1);
+}
+
+.footer__contact--link:after {
+  display: block;
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background-color: #323232;
+  opacity: 0.3;
+  -webkit-transition: all 0.3s cubic-bezier(0.05, 0.03, 0.35, 1);
+  transition: all 0.3s cubic-bezier(0.05, 0.03, 0.35, 1);
+}
+
+.footer__contact--link:hover:after {
+  margin-top: 0.4em;
+}
+
+.footer__contact:hover .footer__contact--hand {
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+}
+
+.footer--hr {
+  border: 0px;
+  outline: 0px;
+  height: 1px;
+  background-color: #323232;
+  margin-top: 1em;
+  margin-bottom: 2.5em;
+}
+
+.footer__tagline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__tagline--copyright {
+  font-size: 0.85em;
+  color: #323232;
+}
+
+.footer__tagline--date {
+  font-size: 0.85em;
+  color: #323232;
+}
+
+@media only screen and (min-width: 677px) {
+  .footer {
+    width: 645px;
+  }
+}
+
+*,
+body {
+  font-family: "Avenir";
+  padding: 0;
+  margin: 0;
+  font-weight: 100;
+}
+
+a {
+  -webkit-text-emphasis: none;
+          text-emphasis: none;
+  text-decoration: none;
+}
+
+.generic-news {
+  margin-top: 2em;
+  font-family: IBM;
+  font-size: 0.5em;
+  color: red;
+}
+/*# sourceMappingURL=main.css.map */

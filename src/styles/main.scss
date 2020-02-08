@@ -1,0 +1,32 @@
+/** partials for all common sass */
+@import "./partials/config/mixin";
+@import "./partials/config/colors";
+@import "./partials/config/fonts";
+@import "./partials/config/variables";
+@import "./partials/config/animations";
+
+/** partials for components*/
+@import "./partials/content/header";
+@import "./partials/content/section";
+@import "./partials/content/main";
+@import "./partials/content/footer";
+
+*,
+body {
+  font-family: "Avenir";
+  padding: 0;
+  margin: 0;
+  font-weight: 100;
+}
+
+a {
+  text-emphasis: none;
+  text-decoration: none;
+}
+
+.generic-news {
+  margin-top: 2em;
+  font-family: IBM;
+  font-size: 0.5em;
+  color: red;
+}

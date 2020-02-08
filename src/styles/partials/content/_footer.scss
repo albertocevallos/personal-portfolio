@@ -1,0 +1,78 @@
+/** partials for all common sass */
+
+@import "../config/mixin";
+@import "../config/colors";
+@import "../config/fonts";
+@import "../config/variables";
+@import "../config/animations";
+
+/** Unique sass */
+
+.footer {
+  margin-top: 5em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1em;
+  margin-bottom: 2em;
+  &__contact {
+    &--hand {
+      width: 1em;
+      transition: all 0.3s cubic-bezier(0.05, 0.03, 0.35, 1);
+    }
+    &--link {
+      line-height: 2em;
+      font-weight: 500;
+      color: $black;
+      text-decoration: none;
+      position: relative;
+      display: inline-block;
+      transition: all 0.3s cubic-bezier(0.05, 0.03, 0.35, 1);
+    }
+
+    &--link:after {
+      display: block;
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      background-color: $black;
+      opacity: 0.3;
+      transition: all 0.3s cubic-bezier(0.05, 0.03, 0.35, 1);
+    }
+
+    &--link:hover:after {
+      margin-top: 0.4em;
+    }
+  }
+  &__contact:hover .footer__contact--hand {
+    transform: rotate(20deg);
+  }
+  &--hr {
+    border: 0px;
+    outline: 0px;
+    height: 1px;
+    background-color: $black;
+    margin-top: 1em;
+    margin-bottom: 2.5em;
+  }
+  &__tagline {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    &--copyright {
+      font-size: 0.85em;
+      color: $black;
+    }
+    &--date {
+      font-size: 0.85em;
+      color: $black;
+    }
+  }
+}
+
+@media only screen and (min-width: $device-media) {
+  .footer {
+    width: $device-width;
+  }
+}

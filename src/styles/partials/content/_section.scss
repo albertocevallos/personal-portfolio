@@ -1,0 +1,174 @@
+/** partials for all common sass */
+
+@import "../config/mixin";
+@import "../config/colors";
+@import "../config/fonts";
+@import "../config/variables";
+@import "../config/animations";
+
+/** Unique sass */
+.section {
+  margin-top: 5em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1em;
+  &--subtitle {
+    font-size: 0.75em;
+    letter-spacing: 0.1em;
+    margin-top: 10em;
+  }
+  &--subtitle span {
+    font-size: 1em;
+  }
+  &--hr {
+    border: 0px;
+    outline: 0px;
+    height: 1px;
+    background-color: $black;
+    margin-top: 1em;
+    margin-bottom: 2.5em;
+  }
+  &__item {
+    margin-top: 3.75em;
+    height: 3.125em;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    &__box {
+      width: 26em;
+
+      &--title {
+        text-decoration: none;
+        color: $black;
+        font-weight: 700;
+        font-size: 1.55em;
+        line-height: 2.5em;
+
+        transition: all 0.3s cubic-bezier(0.05, 0.03, 0.35, 1);
+      }
+      &--title:hover {
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        opacity: 0.5;
+      }
+      &--release {
+        font-size: 0.75em;
+      }
+    }
+    &__wrap {
+      padding-top: 0.25em;
+      display: none; //        display: inline-block;
+      width: 100%;
+      &--info {
+        width: 100%;
+        color: $black;
+        font-size: 0.75em;
+        line-height: 2.5em;
+      }
+      &--release {
+        display: none;
+        color: $black;
+        font-size: 0.75em;
+        line-height: 2.5em;
+        font-weight: 300;
+      }
+    }
+
+    &--gif {
+      display: none;
+      position: absolute;
+      width: 250px;
+      transition: all 0.3s cubic-bezier(0.05, 0.03, 0.35, 1);
+      transform: scale(0);
+      margin-left: 20px;
+      margin-top: -40px;
+      visibility: hidden;
+      z-index: -999;
+      opacity: 1;
+    }
+  }
+  &__item:hover .section__item--gif {
+    transform: scale(1.2);
+    visibility: visible;
+  }
+}
+@media only screen and (min-width: 425px) {
+  .section {
+    &--subtitle span {
+      font-size: 1.5em;
+    }
+    &__item {
+      height: 6em;
+
+      &__box {
+        &--title {
+          font-size: 1em;
+        }
+        &--release {
+          display: none;
+        }
+      }
+      &__wrap {
+        display: block;
+        &--release {
+          display: block;
+        }
+      }
+      &--gif {
+        display: block;
+      }
+    }
+    &__item:hover .section__item--gif {
+      transform: scale(1.2);
+      visibility: visible;
+    }
+  }
+}
+@media only screen and (min-width: 500px) {
+  .section {
+    &__item {
+      height: 3.125em;
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .section {
+    &__item {
+      &__box {
+        &--title {
+          font-size: 1.4em;
+        }
+      }
+      &__wrap {
+        padding-top: 0.75em;
+      }
+    }
+  }
+}
+@media only screen and (min-width: $device-media) {
+  .section {
+    width: $device-width;
+    &__item {
+      height: 5em;
+
+      &__wrap {
+        padding-top: 0.7em;
+        &--info {
+          font-size: 0.85em;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 768px) {
+  .section {
+    &__item {
+      &__wrap {
+        &--info {
+          font-size: 0.85em;
+        }
+      }
+    }
+  }
+}

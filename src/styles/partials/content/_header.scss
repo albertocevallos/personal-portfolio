@@ -1,0 +1,95 @@
+/** partials for all common sass */
+
+@import "../config/mixin";
+@import "../config/colors";
+@import "../config/fonts";
+@import "../config/variables";
+@import "../config/animations";
+
+/** Unique sass */
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.header {
+  margin-top: 2.5em;
+  padding: 0 1em;
+  margin-left: auto;
+  margin-right: auto;
+
+  &__media {
+    display: flex;
+    justify-content: flex-end;
+    &__con {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      transition: all 0.3s cubic-bezier(0.05, 0.03, 0.35, 1);
+      display: none;
+      &--links {
+        text-decoration: none;
+        color: $black;
+        transition: all 0.3s cubic-bezier(0.05, 0.03, 0.35, 1);
+      }
+      &--links:hover {
+        transform: scale(1.1);
+      }
+    }
+    &__email {
+      text-decoration: none;
+      color: $black;
+    }
+    &__email img {
+      width: 1em;
+      transition: all 0.3s cubic-bezier(0.05, 0.03, 0.35, 1);
+    }
+    &__email:hover img {
+      transform: rotate(20deg);
+    }
+  }
+  &__line {
+    width: 100%;
+    background-color: $black;
+    height: 1px;
+    position: relative;
+    &--highlight {
+      position: absolute;
+      right: 0;
+      height: 4px;
+      width: 10em;
+      // background: linear-gradient(-45deg, #833ab4, #fd1d1d, #fcb045);
+      background: linear-gradient(90.68deg, #b993d6 0.26%, #8ca6db 102.37%);
+      margin-top: -1px;
+      border-radius: 5px;
+      animation: gradientBG 5s ease infinite;
+      background-size: 400% 400%;
+    }
+  }
+}
+
+@media only screen and (min-width: 426px) {
+  .header {
+    &__media {
+      justify-content: flex-end;
+
+      &--links {
+        margin-left: 4em;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $device-media) {
+  .header {
+    width: $device-width;
+  }
+}

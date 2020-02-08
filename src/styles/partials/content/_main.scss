@@ -1,0 +1,196 @@
+/** partials for all common sass */
+
+@import "../config/mixin";
+@import "../config/colors";
+@import "../config/fonts";
+@import "../config/variables";
+@import "../config/animations";
+
+/** Unique sass */
+
+.main {
+  padding: 0 1em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5em;
+  display: flex;
+  flex-direction: column;
+
+  &__profile {
+    width: 100%; //change to 50% after mobile
+
+    &--image {
+      background: none;
+
+      //   linear-gradient(
+      //     90.68deg,
+      //     #a8c0ff 0.26%,
+      //     #3f2b96 102.37%
+      //   );
+      border-radius: 50%;
+      width: 45%;
+      padding: 0.2em;
+      display: block;
+      margin: 0 auto;
+    }
+
+    &--name {
+      margin-top: 1em;
+      text-align: center;
+      font-size: xx-large;
+      font-weight: 300;
+      color: $black;
+    }
+    &__info {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      &--bio {
+        cursor: not-allowed;
+        margin-top: 1em;
+      }
+    }
+  }
+
+  &__bio {
+    margin-top: 3em; //change after mobile
+    width: 100%; //change to 50% after mobile
+
+    &--heading {
+      color: $black;
+      font-weight: 100;
+      font-size: 1em;
+      line-height: 2.5em;
+    }
+
+    &--heading span {
+      font-weight: 500;
+    }
+
+    &--heading a {
+      font-weight: 500;
+      color: $black;
+      text-decoration: none;
+      position: relative;
+      display: inline-block;
+      transition: all 0.3s cubic-bezier(0.05, 0.03, 0.35, 1);
+    }
+
+    &--heading a:hover {
+      color: $black;
+    }
+
+    &--heading a:after {
+      display: block;
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      background-color: $black;
+      opacity: 0.3;
+      transition: all 0.3s cubic-bezier(0.05, 0.03, 0.35, 1);
+    }
+
+    &--heading a:hover:after {
+      margin-top: 0.4em;
+    }
+
+    &--subheading {
+      margin-top: 2em;
+      font-weight: 100;
+      font-size: 0.8em;
+      line-height: 2.75em;
+    }
+
+    &--subheading span {
+      font-weight: 500;
+    }
+
+    &--subheading a {
+      font-weight: 500;
+      color: $black;
+      text-decoration: none;
+      position: relative;
+      display: inline-block;
+      transition: all 0.3s cubic-bezier(0.05, 0.03, 0.35, 1);
+    }
+
+    &--subheading a:after {
+      display: block;
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      background-color: $black;
+      opacity: 0.3;
+      transition: all 0.3s cubic-bezier(0.05, 0.03, 0.35, 1);
+    }
+
+    &--subheading a:hover:after {
+      margin-top: 0.4em;
+    }
+
+    &__icons {
+      display: block;
+      margin-top: 2em;
+      display: flex;
+      align-items: center;
+
+      &--svg {
+        color: black;
+        margin-right: 1.25em;
+        width: 1.1em;
+        opacity: 0.75;
+        transition: all 0.3s cubic-bezier(0.05, 0.03, 0.35, 1);
+      }
+
+      &--svg:nth-child(1) {
+        padding-bottom: 0.3em;
+      }
+      &--svg:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 426px) {
+  .main {
+    margin-top: 6.25em;
+
+    &__profile {
+      &--image {
+        width: 160px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $device-media) {
+  .main {
+    width: $device-width;
+    margin-top: 6.25em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    &__profile {
+      &--image {
+        width: 160px;
+      }
+    }
+
+    &__bio {
+      &--heading {
+        font-size: 1.3em;
+        line-height: 1.85em;
+      }
+
+      &--subheading {
+        font-size: 0.95em;
+        line-height: 2.3em;
+      }
+    }
+  }
+}
