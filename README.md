@@ -18,4 +18,5 @@ Feel free to make your own version & use it as a reference! 👋
 - Compile with `npm start`
 - [check it out](http://localhost:3000) in your favorite browser
 
-Made by [Alberto Cevallos](https://twitter.com/acvlls) 💻
+Made by [Alberto Cevallos](https://twitter.com/acvlls) 
+Also, thanks to [AlyssaX](https://alyssax.com/) and [Peter Czaban](https://keorn.org/) for inspiring the design
