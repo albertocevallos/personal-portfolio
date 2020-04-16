@@ -10,11 +10,11 @@ const Footer = () => {
           you&#39;d like to talk, shoot me an email at{" "}
           <a
             className="footer__contact--link"
-            href="mailto:hi@cevallos.co"
+            href="mailto:acvllsh@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
           >
-            hi@cevallos.co
+            acvllsh@gmail.com
           </a>
           <div className="generic-news">
             [Please note website is still under construction{" "}

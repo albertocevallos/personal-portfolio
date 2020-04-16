@@ -1,40 +1,22 @@
 {
   "files": {
-<<<<<<< HEAD
     "main.css": "/static/css/main.3a3d2e0e.chunk.css",
-    "main.js": "/static/js/main.13616ec7.chunk.js",
-    "main.js.map": "/static/js/main.13616ec7.chunk.js.map",
+    "main.js": "/static/js/main.6214fa4a.chunk.js",
+    "main.js.map": "/static/js/main.6214fa4a.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.b240f91f.js",
     "runtime-main.js.map": "/static/js/runtime-main.b240f91f.js.map",
     "static/js/2.54b81557.chunk.js": "/static/js/2.54b81557.chunk.js",
     "static/js/2.54b81557.chunk.js.map": "/static/js/2.54b81557.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.bea7e02bcf7e4bcf32bda75436cc8278.js": "/precache-manifest.bea7e02bcf7e4bcf32bda75436cc8278.js",
+    "precache-manifest.f831d9294951fafcc8a047e03648d9d4.js": "/precache-manifest.f831d9294951fafcc8a047e03648d9d4.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.3a3d2e0e.chunk.css.map": "/static/css/main.3a3d2e0e.chunk.css.map",
     "static/media/main.css": "/static/media/avenir-next-Regular.67016125.otf",
     "static/media/ac.jpeg": "/static/media/ac.6f8d3e13.jpeg",
     "static/media/albertocevallos.jpg": "/static/media/albertocevallos.5cd7c9d5.jpg",
-=======
-    "main.css": "/static/css/main.a5579de1.chunk.css",
-    "main.js": "/static/js/main.2b022c4d.chunk.js",
-    "main.js.map": "/static/js/main.2b022c4d.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.b240f91f.js",
-    "runtime-main.js.map": "/static/js/runtime-main.b240f91f.js.map",
-    "static/js/2.8162249f.chunk.js": "/static/js/2.8162249f.chunk.js",
-    "static/js/2.8162249f.chunk.js.map": "/static/js/2.8162249f.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.607bd3247e5b5c9ed889df28c10cb60f.js": "/precache-manifest.607bd3247e5b5c9ed889df28c10cb60f.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.a5579de1.chunk.css.map": "/static/css/main.a5579de1.chunk.css.map",
-    "static/media/albertocevallos.jpg": "/static/media/albertocevallos.5cd7c9d5.jpg",
-    "static/media/main.css": "/static/media/avenir-next-Regular.67016125.otf",
-    "static/media/dribbble.svg": "/static/media/dribbble.2e7ad28a.svg",
->>>>>>> bf04b72057eb9b57d07cdc4add68e0a8609ba6ac
     "static/media/github.svg": "/static/media/github.f0287a5c.svg",
     "static/media/linkedin.svg": "/static/media/linkedin.4421b01a.svg",
     "static/media/medium.svg": "/static/media/medium.52d5cce7.svg",
-<<<<<<< HEAD
     "static/media/none.png": "/static/media/none.2b4c0353.png",
     "static/media/rocket.png": "/static/media/rocket.ae10d73e.png",
     "static/media/twitter.svg": "/static/media/twitter.224509a9.svg",
@@ -44,16 +26,6 @@
     "static/js/runtime-main.b240f91f.js",
     "static/js/2.54b81557.chunk.js",
     "static/css/main.3a3d2e0e.chunk.css",
-    "static/js/main.13616ec7.chunk.js"
-=======
-    "static/media/twitter.svg": "/static/media/twitter.224509a9.svg",
-    "static/media/twiverse2.gif": "/static/media/twiverse2.4b033f5b.gif"
-  },
-  "entrypoints": [
-    "static/js/runtime-main.b240f91f.js",
-    "static/js/2.8162249f.chunk.js",
-    "static/css/main.a5579de1.chunk.css",
-    "static/js/main.2b022c4d.chunk.js"
->>>>>>> bf04b72057eb9b57d07cdc4add68e0a8609ba6ac
+    "static/js/main.6214fa4a.chunk.js"
   ]
 }

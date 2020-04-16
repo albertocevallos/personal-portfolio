@@ -33,11 +33,12 @@ const Header = () => {
         </span>
         <a
           className="header__media__email"
-          href="mailto:hi@cevallos.co"
+          href="mailto:acvllsh@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
         >
-          hi@cevallos.co <img src={Hand} alt="hand" />
+          acvllsh@gmail.com
+          <img src={Hand} alt="hand" />
         </a>
       </div>
       <div className="header__line">

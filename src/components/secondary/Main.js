@@ -42,18 +42,18 @@ const Main = () => {
           below. {/* </a>{" "} */}
           He's also the founder of{" "}
           <a
-            href="https://cercle.studio"
+            href="https://studiosmetal.co/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Cercle
+            Metal
           </a>{" "}
           🏗️, a technology studio dedicated to building interesting ventures.
         </h2>
 
         <div className="main__bio__icons">
           <a
-            href="https://twitter.com/cevall0s"
+            href="https://twitter.com/acvlls"
             target="_blank"
             rel="noopener noreferrer"
           >
